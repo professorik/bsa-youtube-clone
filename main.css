@@ -22,8 +22,3 @@ body{
     visibility: hidden;
     height: 0px;
 }
-img:hover {
-    filter: none;
-    -webkit-filter: grayscale(0);
-    -webkit-transform: scale(1.01);
-}

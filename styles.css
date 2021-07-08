@@ -30,7 +30,7 @@ body {
   display: flex;
 }
 
-.thumbnail::before {
+.thumbnail[data-live]::before {
   content: attr(data-live);
   position: absolute;
   background-color: rgba(255, 0, 0, 0.85);
@@ -42,7 +42,7 @@ body {
   font-size: .9rem;
 }
 
-.thumbnail::after {
+.thumbnail[data-duration]::after {
   content: attr(data-duration);
   position: absolute;
   background-color: rgba(0, 0, 0, .85);
@@ -60,6 +60,26 @@ body {
   min-width: 250px;
   min-height: 150px;
   background-color: #AAA;
+}
+
+.play-btn{
+  position: absolute;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  margin: -35px 0 0 -35px;
+  display: none;
+  z-index: 9999;
+}
+
+.thumbnail-image:hover {
+  filter: none;
+  -webkit-filter: grayscale(5);
+  -webkit-transform: scale(1.01);
+}
+
+.thumbnail:hover .play-btn{
+  display: block;
 }
 
 .video-bottom-section {
@@ -283,4 +303,13 @@ body {
 .more-btn{
   height: 20px;
   margin-left: 95px;
+}
+
+.categories>::-webkit-scrollbar {
+  height: 4px;
+}
+
+.categories>::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: orange;
 }

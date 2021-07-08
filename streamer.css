@@ -20,6 +20,14 @@
   text-overflow: ellipsis;
 }
 
+.streamer > .username:hover{
+  color: blue;
+}
+
+.streamer > img{
+  margin-left: 5px;
+}
+
 .streamer > .blinking{
   animation: blinkingText 1.2s infinite;
   font-weight:bold;
