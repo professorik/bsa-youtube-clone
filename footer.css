@@ -1,0 +1,10 @@
+.footer{
+    align-content: center;
+    grid-column: 1/4;
+}
+.footer>p{
+    color: #404040;
+    padding-top: 50px;
+    font-size: 13px;
+    text-align: center;
+}
